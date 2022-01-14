@@ -1,5 +1,9 @@
 h1 {
 	color: red;
 	font-size:200px;
+}
 
+.green-img{
+	border: 25px solid green;
+	border-radius: 75%
 }
