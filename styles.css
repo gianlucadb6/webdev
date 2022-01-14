@@ -1,9 +1,12 @@
 h1 {
 	color: red;
-	font-size:200px;
+	font-size:100px;
 }
 
 .green-img{
+	position: absolute;
+	top: 8px;
+	right: 16px;
 	border: 6px solid green;
 	border-radius: 50%;
 	width: 300px;
