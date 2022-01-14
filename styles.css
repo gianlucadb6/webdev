@@ -4,6 +4,7 @@ h1 {
 }
 
 .green-img{
-	border: 25px solid green;
-	border-radius: 75%
+	border: 6px solid green;
+	border-radius: 50%;
+	width: 300px;
 }
