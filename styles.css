@@ -3,11 +3,18 @@ h1 {
 	font-size:100px;
 }
 
+h3 {
+	color: white;
+	font-size: 6px;
+	text-align: center;
+	vertical-align: text-bottom;
+}
+
 .green-img{
 	position: absolute;
 	top: 8px;
 	right: 16px;
-	border: 6px solid green;
+	border: 6px solid white;
 	border-radius: 50%;
 	width: 300px;
 }
