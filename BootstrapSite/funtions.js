@@ -1,4 +1,3 @@
-function saveToFile() {
-	document.getElementById("email");
+function saveToFile(email) {
 	alert("got it");
 }

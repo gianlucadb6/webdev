@@ -8,9 +8,23 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 		<link rel="stylesheet" href="custom.css">		
 		
-		<script src="/functions.js"></script>
+		<script>
+
+			function saveToFile(email) {
+				const fsLib  = require('fs');
+				alert("done");
+				let data = "some@email.com\n";	
+				
+				fsLib.writeFile('emailList.txt', data, (err) => { 
+					if(err) throw err;
+				})
+
+				document.alert("done")
+
+			}
+		</script>
 	
-		<title> Notify2Buy </title> 
+		<title> Gas Sniper </title> 
 	</head>
 	<body>
 		<div class="container">
@@ -38,7 +52,7 @@
       					<input type="text" class="form-control mb-2" id="email" placeholder="rShackleford@gmail.com">
     				</div>
     				<div class="col-auto">
-      					<button type="submit" class="btn btn-primary mb-2" onclick=saveToFile();>Submit</button>
+      					<button type="submit" class="btn btn-primary mb-2" onclick="saveToFile(document.getElementById('email').value)"> Submit </button>
     				</div>
   			</div>
 		</form>
